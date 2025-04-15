@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #e0f3ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.intro {
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  padding-top: 20px;
+}
+
+.event-info-left {
+  text-align: left;
+  padding-left: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.event-info-left li {
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.event-details {
+  list-style: none;
+  font-size: 20px;
+  padding-top: 70px;
+  margin: 0;
+}
+
+.event-details li {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.event-image {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.event-image img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-section {
+  font-size: 22px;
+  color: black;
+  padding-bottom: 10px;
+}
+
+.contact {
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.invitation-section {
+  background-color: #11a1bc;
+  color: white;
+  border-radius: 6px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: space-between;
+  margin: 50px 0;
+  transition: background-color 0.3s ease;
+}
+
+.invitation-section:hover {
+  background-color: #17b1ab;
+}
+
+.invitation-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.icon-left,
+.icon-right {
+  font-size: 18px;
+}
+
+.invitation-text {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.why-dubai {
+  text-align: center;
+  font-size: 22px;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.benefits {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.benefit-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.benefit-item {
+  flex: 1;
+  max-width: 33%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #ffe5b4, #ffdacc);
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item.left {
+  text-align: left;
+}
+
+.benefit-item.center {
+  text-align: center;
+}
+
+.benefit-item.right {
+  text-align: right;
+}
+
+.img {
+  border: 4px solid white;
+  padding: 2px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #11a1bc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover,
+.contact-btn:focus,
+.contact-btn:active,
+.contact-btn:visited {
+  background-color: #0d8fa6;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.actions a {
+  padding: 0.7rem 1.2rem;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+@media(max-width: 768px) {
+  .parent-event {
+    height: auto;
+    overflow: hidden;
+    padding: 20px 10px; /* Fixed padding for small screens */
+    box-sizing: border-box;
+  }
+
+  .container {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    background: #e0f3ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .event-image {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+
+  .event-image img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .benefit-row {
+    display: flex;
+    justify-content: center; /* Center the benefit items */
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-direction: column; /* Stack the items vertically */
+  }
+
+  .benefit-item {
+    flex: 1;
+    min-width: 250px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    background: linear-gradient(135deg, #ffe5b4, #ffdacc);
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* Mobile-specific adjustments */
+  @media (max-width: 768px) {
+    .benefit-row {
+      flex-direction: column; /* Keep the items stacked vertically */
+      gap: 10px;
+      align-items: center; /* Center align the items */
+    }
+
+    .benefit-item {
+      width: 100%; /* Make benefit items take full width on small screens */
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,375 @@
+.invitation-container {
+  font-family: Arial, sans-serif;
+  background: #e0f3ff;         /* Match Event Page background */
+  padding: 40px;               /* Match Event Page padding */
+  width: 100%;
+  height: 100vh; 
+  max-width: 870px;            /* Same as Event Page */
+  margin: 40px ;   
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);       /* Centered layout like Event Page */
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  /* No border-radius or box-shadow needed */
+}
+
+
+/* .invitation-container {
+  font-family: Arial, sans-serif;
+  background: #e0f3ff;       
+  margin: 40px auto;        
+  padding: 40px;
+  height: 100vh;             
+  width: 100%;
+  max-width: 800px;           
+  border-radius: 0px;;       
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+} */
+
+
+
+.owner-profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 4rem 0 1rem 0; /* Added top margin (2rem) and kept bottom margin (1rem) */
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.date-section {
+  position: relative; 
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+
+}
+
+
+.date-section:hover {
+  transform: scale(1.02);
+}
+
+.date-section h3 {
+  margin: 0;
+  color: #222;
+}
+
+.input-box {
+  margin-top: 1rem;
+}
+
+.input-box input {
+  width: 90%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input-box button {
+  padding: 0.6rem 1.2rem;
+  background: #f67280;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem; /* Add this line to move the button down */
+}
+
+
+.input-box button:hover {
+  background: #f67280;
+}
+
+.close-btn-wrapper{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  padding-right: 25px;
+}
+
+.close-btn-wrapper:hover {
+  color: #e74c3c;
+}
+
+.rsvp-list {
+  margin-top: 1rem;
+  background: #fffaf0;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #444;
+  text-align: left;
+}
+
+.rsvp-list h4 {
+  margin-bottom: 0.5rem;
+  color: #e67e22;
+}
+
+.rsvp-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.rsvp-list li {
+  margin: 0.3rem 0;
+}    
+
+
+/* ============================================
+   ✅ MEDIA QUERIES FOR INVITATION PAGE
+   ============================================ */
+
+   /* ============================================
+   ✅ DATE BOX STYLING TO MATCH THE IMAGE
+   ============================================ */
+
+/* ============================================
+   ✅ MEDIA QUERIES FOR INVITATION PAGE
+   ============================================ */
+
+   /* For medium screens (tablets) */
+   @media (max-width: 992px) {
+    .invitation-container {
+      font-family: Arial, sans-serif;
+      background: #e0f3ff;
+      padding: 20px;
+      width: 100%;
+      max-width: 100%;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .owner-profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #333;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      text-align: center;
+      color: #555;
+      margin-bottom: 15px;
+    }
+  
+    .date-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 500px;
+      margin: 1rem auto;
+      padding: 1rem;
+    }
+  
+    .date-box {
+      width: 100%;
+      padding: 1.2rem;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+  
+    .date-box h3 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+  
+    .date-box p {
+      font-size: 1rem;
+      margin: 5px 0;
+      color: #7f8c8d;
+    }
+  
+    .input-box {
+      width: 100%;
+      max-width: 500px;
+      margin: 1.5rem auto;
+    }
+  
+    .input-box input {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      color: #222; /* Dark text */
+      background-color: #fff; /* White background */
+      box-sizing: border-box;
+    }
+  
+    .input-box input::placeholder {
+      color: #666; /* Dark gray placeholder */
+      opacity: 1;
+    }
+  
+    .input-box button {
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 0.95rem;
+      background: #f67280;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+  
+    .input-box button:hover {
+      background: #f35b6c;
+    }
+  }
+  
+  /* For small screens (mobile) */
+  @media (max-width: 600px) {
+    .invitation-container {
+      padding: 15px;
+      margin: 10px auto;
+    }
+  
+    .owner-profile {
+      width: 100px;
+      height: 100px;
+    }
+  
+    h1 {
+      font-size: 1.4rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  
+    .date-section {
+      gap: 0.6rem; /* Reduced gap */
+      max-width: 90%; /* Slightly increased from 90% */
+      padding: 0.5rem;
+    }
+  
+    /* Smaller Date Box Styles */
+    .date-box {
+      padding: 0.7rem; /* Reduced padding */
+      width: 95%; /* Slightly less than full width */
+      max-width: 95%; /* Prevents overflow */
+      box-sizing: border-box;
+      margin: 0 auto;
+      overflow: hidden;
+      word-wrap: break-word;
+      text-overflow: ellipsis;
+      font-size: 0.85rem; /* Added base font reduction */
+    }
+  
+    .date-box h3 {
+      font-size: 0.95rem; /* Reduced from 1.1rem */
+      margin: 0.1rem 0; /* Reduced margin */
+    }
+  
+    .date-box p {
+      font-size: 0.8rem; /* Reduced from 0.9rem */
+      margin: 0.1rem 0; /* Reduced margin */
+    }
+  
+    .input-box {
+      max-width: 90%;
+    }
+  
+    .input-box input {
+      padding: 0.7rem;
+      font-size: 0.95rem;
+      color: #222;
+      background-color: #fff;
+    }
+  
+    .input-box input::placeholder {
+      color: #666;
+    }
+  
+    .input-box button {
+      padding: 0.7rem;
+      font-size: 0.95rem;
+      background: #f67280;
+    }
+  
+    .rsvp-list {
+      width: 90%;
+      margin: 1rem auto;
+      padding: 0.8rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+    }
+  
+    .rsvp-list h4 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+    }
+  
+    .close-btn-wrapper {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      font-size: 1.2rem;
+      color: #7f8c8d;
+      padding-right: 25px;
+    }
+  }
